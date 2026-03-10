@@ -1,7 +1,9 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
- 
+using TalentSphere.Models;
+using TalentSphere.Models.User;
+
 namespace TalentSphereAPI.Models
 {
     public class Interview
@@ -23,14 +25,6 @@ namespace TalentSphereAPI.Models
  
         [Required]
         public string Status { get; set; }
- 
-        // Navigation Properties
- 
-        [ForeignKey("ApplicationID")]
-        public Application Application { get; set; }
- 
-        [ForeignKey("InterviewerID")]
-        public User Interviewer { get; set; }
     }
 }
  
