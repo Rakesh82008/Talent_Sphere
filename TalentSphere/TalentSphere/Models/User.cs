@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace TalentSphere.Models.User
+namespace TalentSphere.Models
 {
     public class User
     {
