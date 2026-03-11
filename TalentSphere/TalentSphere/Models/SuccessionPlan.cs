@@ -9,14 +9,16 @@ namespace TalentSphere.Models
 		public int SuccessionId { get; set; }
 
 		public int EmployeeId { get; set; }
+		public virtual Employee Employee { get; set; }
 
 		public string Position { get; set; }
 
 		public string Timeline { get; set; }
 		public SuccessionStatus status { get; set; }
 
-		public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-		public DateTime? UpdatedAt { get; set; } = DateTime.UtcNow;
+		public DateTime CreatedAt { get; set; } 
+		public DateTime? UpdatedAt { get; set; }
+		public bool IsDeleted { get; set; }
 
 	}
 }

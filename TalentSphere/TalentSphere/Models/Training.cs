@@ -13,12 +13,11 @@ namespace TalentSphere.Models
 
 		public string Duration { get; set; }
 
-		public TrainingStatus status { get; set; } = TrainingStatus.Planned;
+		public TrainingStatus status { get; set; }
         
-		public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+		public DateTime CreatedAt { get; set; }
         
-		public DateTime? UpdatedAt { get; set; } = DateTime.UtcNow;
-
-
+		public DateTime? UpdatedAt { get; set; }
+		public bool IsDeleted { get; set; } 
 	}
 }

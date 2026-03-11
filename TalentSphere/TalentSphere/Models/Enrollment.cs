@@ -8,16 +8,19 @@ namespace TalentSphere.Models
 		public int EnrollmentID { get; set; }
 
 		public int TrainingID { get; set; }
+		public virtual Training Training { get; set; }
 
 		public int EmployeeID { get; set; }
+		public virtual Employee Employee { get; set; }
 
 		public DateOnly Date { get; set; }
 
-		public EnrollmentStatus status { get; set; } = EnrollmentStatus.Enrolled;
+		public EnrollmentStatus status { get; set; }
 
-		public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+		public DateTime CreatedAt { get; set; }
 
-		public DateTime? UpdatedAt { get; set; } = DateTime.UtcNow;
+		public DateTime? UpdatedAt { get; set; }
+		public Boolean IsDeleted { get; set; }
 
 	}
 }
