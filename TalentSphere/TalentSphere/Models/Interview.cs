@@ -5,7 +5,7 @@ using TalentSphere.Enums;
  
 namespace TalentSphere.Models
 {
-    public class Interview
+   public class Interview
     {
         public int InterviewID { get; set; }
 
