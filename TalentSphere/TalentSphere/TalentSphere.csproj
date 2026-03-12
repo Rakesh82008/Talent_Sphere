@@ -25,6 +25,7 @@
     <Folder Include="DTOs\" />
     <Folder Include="Middleware\" />
     <Folder Include="Mappers\" />
+    <Folder Include="Migrations\" />
     <Folder Include="Services\" />
     <Folder Include="Repositories\" />
   </ItemGroup>
