@@ -33,6 +33,17 @@ namespace TalentSphere.Mappers
             CreateMap<CreateSelectionDTO, Selection>()
                 .ReverseMap();
 
+            //Application mappings
+            CreateMap<CreateApplicationDTO, Application>()
+                .ReverseMap();
+
+            //Resume mappings
+            CreateMap<CreateResumeDTO, Resume>()
+                .ReverseMap();
+
+            //Screening mappings
+            CreateMap<CreateScreeningDTO, Screening>()
+                .ReverseMap();
             //Report mappings
             CreateMap<CreateReportDTO, Report>()
                 .ReverseMap();
